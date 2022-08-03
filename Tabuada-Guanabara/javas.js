@@ -2,7 +2,7 @@
 
 let n = document.querySelector('#num')
 let ir = document.querySelector('#ir')
-let res = document.querySelector('#seltab')
+let res = document.querySelector('#res')
 
 ir.addEventListener('click', function(e){
 
@@ -12,12 +12,15 @@ ir.addEventListener('click', function(e){
     let numf;
 
     for(let i = 0; i < 10; i++){
+        
+        numf = num * i
+        text =  num + "x" + i + "=" + numf 
+        textf = textf + text + "<br>"
 
-        let item = document.createElement('option')
-        item.text = `${num} x ${i} = ${num*i}`
-        res.appendChild(item)
+    
     }
 
+    res.textContent = `${textf}`
 
     e.preventDefault();
 })
