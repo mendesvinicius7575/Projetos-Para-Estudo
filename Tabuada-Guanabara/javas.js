@@ -9,12 +9,10 @@ ir.addEventListener('click', function(e){
     let num = Number(n.value)
     let text = ''
     let textf = ''
-    let numf;
 
     for(let i = 0; i < 10; i++){
         
-        numf = num * i
-        text =  `${num} x ${i} = ${numf}`
+        text =  num + "x" + i + ":" + (num*i) + "<br/>" ;
         textf = textf + text 
 
     
