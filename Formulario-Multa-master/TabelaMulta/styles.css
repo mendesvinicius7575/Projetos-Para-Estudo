@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+body{
+    background-color: rgb(255, 235, 209);
+    font-family: 'Barlow Condensed';
+   
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(180, 173, 164);
+    font: normal bold 2.5em 'Barlow Condensed';
+    width: 420px;
+    height: 100px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 15px;
+    line-height: 90px;
+}
+h2{
+    font: normal normal 1.3em 'Barlow Condensed';
+    text-align: center;
+}
+div#tamanho{
+    text-align: center;
+    font-weight: bold;
+    height: 10px;
+    margin-top: 10px;
+}
+.pessoa{
+    background-color: rgb(180, 173, 164);
+    width: 400px;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: left;
+    
+}
+.multa{
+    background-color: rgb(180, 173, 164);
+    width: 400px;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.multa centro{
+    text-align: center;
+}
+input{
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+.centro{
+    text-align: center;
+    margin-top: 20px;
+}
+
+input#botao{
+    margin: auto;
+}
+input#nomepessoa{
+    width: 150px;
+}
+input#idadepessoa{
+    width: 50px;
+}
+input#enderecopessoa{
+    width: 280px;
+}
+input#cidadepessoa{
+    width: 200px;
+}
+input#estadopessoa{
+    width: 50px;
+}
+input#ceppessoa{
+    width: 70px;
+}
+input#velmulta{
+    width: 60px;
+}

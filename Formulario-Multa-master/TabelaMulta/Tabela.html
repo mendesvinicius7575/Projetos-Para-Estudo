@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="RegradeNegocio.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Registros de Velocidade</h1>
+        <div class="pessoa">
+            <div id="tamanho">Informações da Pessoa</div>
+            <br><br>
+            Nome: <input type="text" name="pessoa" id="nomepessoa"> 
+            Idade: <input type="number" name="idade" id="idadepessoa">
+            <br>
+            Endereço: <input type="text" name="endereco" id="enderecopessoa">
+            <br>
+            Cidade: <input type="text" name="cidade" id="cidadepessoa">
+            <br>
+            Estado: <input type="text" name="estado" id="estadopessoa">
+            País: <input type="text" name="pais" id="paispessoa">
+            <br>
+            CEP: <input type="text" name="cep" id="ceppessoa">
+
+        </div>
+
+        <div class="multa">
+            <div id="tamanho">Informações da Multa</div>
+            <br><br>
+            Modelo do Carro: <select name="selectmodelo" id="modelocarro">
+                <option value="fusca">Fusca</option>
+                <option value="kombi">Kombi</option>
+            </select>
+            <br>
+            Data: <input type="date" name="data" id="datamulta">
+            <br>
+            Velocidade: <input type="number" name="vel" id="velmulta"> Km/h
+        </div> 
+    </div>
+    <div class="centro">
+        <input type="button" value="Verificar Pessoa" onclick="verificarPessoa()">
+        <input type="button" value="Verificar Multa" onclick="verificarMulta()">
+    </div>
+        <div class="multa centro">
+            Nota:
+        <div id="nota"></div>
+    </div>
+</body>
+</html>
