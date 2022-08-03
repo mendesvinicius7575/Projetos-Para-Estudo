@@ -51,6 +51,8 @@
         </div>
     </section>
     <script>
+
+        //Pegando as tags com query
         let ini = document.querySelector('#ini')
         let pul = document.querySelector('#pul')
         let fim = document.querySelector('#fin')
@@ -59,42 +61,51 @@
 
         let check = document.querySelector('#checar')
 
-        check.addEventListener('click', function(e){
+        //botao para iniciar a regra de negocio
 
+        check.addEventListener('click', function(e){
+        
+        //passando os dados para uma nova variavel
         let cxini = Number(ini.value)
         let cxpul = Number(pul.value)
         let cxfim = Number(fim.value)
 
-
+        //testando as possibilidades de inserção incorretas
         if(cxini < 0 || cxpul < 0 || cxfim < 0){
 
             alert('Você digitou um numero negativo')
             ini.value = ''
             pul.value = ''
             fim.value = ''
-
+        //caso seja uma contagem que decrementa 
         }else if(cxfim < cxini){
 
-           alert('O Número final é menor que o inicial')
-           ini.value = ''
-           pul.value = ''
-           fim.value = ''
+            var resp = ''
 
+            for(cxini; cxini >= cxfim; cxini -= cxpul){
+                resp = resp + `${cxini} `
+            }
+
+            resp = resp + `Fim`
+        //testa se o user nao colocou nada
         }else if(ini.value == '' || pul.value == '' || fim.value == ''){
 
            alert('Faltou digitar algum dado')
            ini.value = ''
            pul.value = ''
            fim.value = ''
-
+        
+        //caso seja contagem que incrementa
         }else{
-
+            
+            
             var resp = ''
 
             for(cxini; cxini <= cxfim; cxini += cxpul){
-                resp = resp + `N:${cxini}, `
+                resp = resp + `${cxini} `
             }
-        
+            
+            resp = resp + `Fim`
             
         }
         res.textContent = resp
