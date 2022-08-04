@@ -12,13 +12,15 @@ ir.addEventListener('click', function(e){
 
     for(let i = 0; i < 10; i++){
         
-        text =  num + "x" + i + ":" + (num*i) + "<br/>" ;
-        textf = textf + text 
-
+        text =  num + " x " + i + " = " + (num*i);
+        let item = document.createElement('li')
+        item.textContent = text
+        res.appendChild(item)
+    
     
     }
 
-    res.textContent = `${textf}`
+
 
     e.preventDefault();
 })
